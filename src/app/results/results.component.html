@@ -1,0 +1,98 @@
+<div class="container">
+  <div class="border d-flex justify-content-center align-items-center mt-5 valueAtual">
+    <p> {{ exchangeRate | currency}}</p>
+  </div>
+
+  <div class="container row d-flex mt-3">
+    <div class="col-xs-6">
+      <strong>LAST 30 DAYS</strong>
+    </div>
+    <div class="d-flex col-xs-6 ml-auto plus">
+      <button (click)="historyPrice()" class="pointer">
+        +
+      </button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="container d-flex border flex-column mt-5" *ngFor="let day of history">
+      <div class="d-flex ml-2 container">
+        <div class="col-xs-12 p-0 days">
+          <p>{{day.date | date: 'dd/MM/yyyy'}}</p>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Open: <span>{{day.open | currency}}</span>
+            </div>
+            <div class="col-xs-6 ml-5">
+              Hight: <span>{{day.high | currency}}</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 ">
+              Close: <span>{{day.close | currency}}</span>
+            </div>
+            <div class="col-xs-6 ml-5">
+              Low: <span>{{day.low | currency}}</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- <div class="container">
+  <div class="line"></div>
+  <div class="rate">
+    <p>Exchange rate now</p>
+    <span>09/03/2022 - 15h09</span>
+  </div>
+
+  <div class="currency">
+    USD/BRL
+  </div>
+
+  <div class="value">
+    <p>R$ 5,00</p>
+  </div>
+
+  <div class="history">
+    <div class="lastdays">
+      <p>LAST 30 DAYS</p>
+    </div>
+
+    <div class="plus">
+      +
+    </div>
+
+    <div class="row">
+      <div class="content">
+        <span>
+          09/03/2022
+        </span>
+        <div class="col-md-2">
+          <p>Open:</p>
+          <span>R$ 5.0666</span>
+          <p>Hight:</p>
+          <span>R$ 5.0689</span>
+        </div>
+        <div>
+          <p>Close:</p>
+          <span>R$ 5.0038</span>
+          <p>LOw:</p>
+          <span>R$ 4.9836</span>
+        </div>
+        <div class="percent">
+          <p>close diff (%):</p>
+          <span>-1.15%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+ -->

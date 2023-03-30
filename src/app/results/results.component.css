@@ -1,0 +1,162 @@
+.valueAtual{
+  width: 33rem;
+  height: 7.2rem;
+
+  background: rgba(7, 176, 251, 0.1);
+}
+
+.valueAtual p{
+
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #07B0FB;
+}
+
+.plus{
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: #07B0FB;
+  text-align: center;
+}
+.pointer{
+  cursor: pointer;
+  color: #07B0FB;
+}
+
+.days p{
+  color: #07B0FB;
+  font-weight: 600;
+}
+
+.content{
+  background: #F4F4F4;
+}
+
+.content .container{
+  background: #fff;
+}
+
+@media (min-width: 480px){
+  .valueAtual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 30%;
+
+  }
+}
+
+/* .container{
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  height: 28px;
+}
+
+.container .line{
+  position: absolute;
+  width: 330px;
+  height: 0px;
+  left: 15px;
+  top: 300px;
+
+border: 1px solid #E5E5E5;
+}
+
+.container .rate p{
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.container .rate span{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.currency{
+  display: flex;
+  margin-left: 100px;
+  margin-top: 38px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  align-items: center;
+  text-align: right;
+  color: #07B0FB;
+}
+
+.container .value{
+  display: flex;
+  position: absolute;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 72px;
+
+  background: rgba(7, 176, 251, 0.1);
+
+}
+
+.container .value p{
+  display: flex;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #07B0FB;
+}
+
+.history{
+  position: fixed;
+  margin-top: 30px;
+}
+
+.lastdays{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 105px;
+
+  margin-top: 150px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.plus{
+  position: absolute;
+  display: flex;
+  right: calc(50% - 660px/2);
+  top: calc(50% - 4px/2 - 0.09px);
+  margin-top: 150px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #07B0FB;
+  text-align: center;
+}
+.card{
+  position: absolute;
+  background: #F4F4F4;
+}
+.content{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #FFFFFF;
+
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+ */
